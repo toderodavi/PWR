@@ -1,25 +1,91 @@
-.container {
-    margin: 2rem 0rem 0rem 2rem;
-    width: 65%;
-}
-
+/* Sumário */
 .wrapper {
-    margin: 2rem 4rem 0rem 0rem;
+    margin-right: 4rem;
     float: right;
 }
 
+.summary {
+    width:  fit-content;
+    padding: 0rem 1.5rem;
+
+    font-size: 18px;
+    line-height: 1.6rem;
+
+    background-color: #505050cb;
+    border: #c2c1c1 solid 0.3rem;
+    border-radius: 8px;
+    box-shadow: 5px 2px 0px 0px #1e1f20;
+}
+
+.summary > li > a {
+    text-decoration: none;
+    color: #f1f5f9;
+}
+
+.summary > ul > li > a {
+    text-decoration: none;
+    color: #f1f5f9;
+}
+
+/* A caixa utilizada na maior parte do site para textos e imagens*/
+.container {
+    margin-left: 4rem;
+    width: 60%;
+}
+
+.container > div {
+    position: relative;
+}
+
+.container > div > sub {
+    position: absolute;
+    bottom: 0;
+    font-size: 1rem;   
+}
+
+/* A caixa que faz a grid na seção "Matrizes Características" */
+.grid-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Permite responsividade */
+    width: 80%;
+
+    row-gap: 0.5rem;
+    column-gap: 2rem;
+    
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.grid-container > div {
+    height: 233px;
+}
+
+.grid-container > div > p {
+    margin: 1rem 0rem;
+}
+
+.grid-container > div > sub {
+    position: absolute;
+    margin-top: 4rem;
+    font-size: 1rem; 
+}
+
+/* A caixa utilizada para dispor as imagens de matrizes na horizontal */
 .operation {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     height: fit-content ;
 
     align-items: center;
     align-content: center;
 
-    padding: 4rem 0rem;
     gap: 4rem;
 }
 
+/* A caixa utilizada para dispor as imagens de matrizes na vertical */
 .operation_column {
     display: flex;
     flex-direction: column;
@@ -33,59 +99,11 @@
     gap: 2rem;
 }
 
-.grid-container {
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    width: 93%;
-
-    row-gap: 0.5rem;
-    column-gap: 2rem;
-    margin: 1rem 0rem 0rem 2rem;
-
-    align-items: center;
-    align-content: center;
-    text-align: center;
+.bold {
+    font-weight: bold;
 }
 
-.grid-container > div {
-    height: 233px;
-}
-
-.grid-container > div > p {
+.underline-bold {
     text-decoration: underline;
-    margin: 1rem 0rem;
-}
-
-.grid-container > div > sub {
-    position: absolute;
-    margin-top: 4rem;
-    font-size: 1rem; 
-}
-
-.summary {
-    width:  fit-content;
-    padding: 0rem 1.5rem;
-
-    font-size: 1rem;
-    line-height: 1.5rem;
-    background-color: rgb(212, 212, 212);
-}
-
-.summary > li > a {
-    text-decoration: none;
-}
-
-.summary > ul > li > a {
-    text-decoration: none;
-}
-
-.container > div {
-    position: relative;
-}
-
-.container > div > sub {
-    position: absolute;
-    bottom: 0;
-    font-size: 1rem;   
+    font-weight: 500;
 }
