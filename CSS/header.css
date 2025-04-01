@@ -1,0 +1,58 @@
+html {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #fefefe;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    background-color: aquamarine;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+
+    border-bottom: 0.05rem solid black;
+}
+
+.header > a {
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header > a:hover {
+    background-color: aliceblue;
+}
+
+.header > a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0.2rem;
+    margin-top: 0.8rem;
+    background-color: #000;
+    transition: all ease-in-out 200ms;
+}
+
+.header > a:hover::after {
+    width: 100%;
+}
+
+/* lembre-se de line-height */
+/* link, visited, focus, hover and active */

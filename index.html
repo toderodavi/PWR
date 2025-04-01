@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/header.css" type="text/css">
+    <link rel="stylesheet" href="CSS/content.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+     rel="stylesheet">
+</head>
+<body>
+<header class="header">
+        <a href="index.html">Conteúdo</a>
+        <a href="second.html">Exercícios</a>
+</header>
+
+<div class="wrapper">
+        <h2>Sumário</h2>
+        <ul class="summary">
+                <li><a href="#what-is">O que são Matrizes?</a></li>
+                <li><a href="#">Matrizes características</a></li>
+                <li><a href="#">Operações com Matrizes</a></li>
+                <ul>
+                        <li><a href="#">Adição</a></li>
+                        <li><a href="#">Subtração</a></li>
+                        <li><a href="#">Multiplicar por escalares</a></li>
+                        <li><a href="#">Produto de Matrizes</a></li>
+                </ul>
+        </ul>        
+</div>
+
+<div class="container">
+        <h1 id="what-is">O que são matrizes?</h1>
+        <p>
+                Matrizes são uma representação de um grupo de valores que estão ordenados em linhas e colunas.
+                Uma matriz é representada por uma letra maiúscula e seu conteúdo em letras minúsculas. No canto inferior direito,
+                está representado o número de linhas (i) e o de colunas da matriz (j).
+                Ex.:
+        </p>
+        <div>
+                <img src="img/Matriz_Exemplo.jpg" width="150">
+                <sub>2x2</sub>
+        </div>
+        <h1 id="what-is">Matrizes características</h1>
+        <p>
+                Com base em padrões e particularidades da matriz, podemos nomeá-las de diferentes formas:
+        </p>
+</div>
+<div class="grid-container">
+        <div>
+                <p>Matriz Quadrática</p>
+                <img src="img/Matriz_Quadr.jpg" width="150px" height="75px">   
+                <sub>2x2</sub>
+                <p>O seu número de linhas (2) é igual ao seu número de colunas (2)</p>        
+                
+        </div>
+
+        <div>
+                <p>Matriz Nula</p>
+                <img src="img/Matriz_Nula.jpg" width="150px" height="75px">
+                <sub>2x2</sub>
+                <p>Todos os seus elementos são igual a 0.</p>
+        </div>
+
+        <div>
+                <p>Matriz Linha</p>
+                <img src="img/Matriz_Linha.jpg" width="150px" height="75px">
+                <sub>1x2</sub>
+                <p>A matriz é constituída por somente uma linha e um número qualquer de colunas.</p>        
+        </div>
+
+        <div>
+                <p>Matriz Coluna</p>
+                <img src="img/Matriz_Coluna.jpg" width="150px" height="75px">
+                <sub>2x1</sub>
+                <p>A matriz é constituída por somente uma coluna e um número qualquer de linhas.</p>
+        </div>
+
+        <div>
+                <p>Matriz Diagonal</p>
+                <img src="img/Matriz_Diag.jpg" width="150px" height="75px">
+                <sub>3x3</sub>
+                <p>Somente a diagonal principal da matriz possui elementos diferentes de 0.</p>        
+        </div>
+
+        <div>
+                <p>Matriz Identidade</p>
+                <img src="img/Matriz_Ident.jpg" width="150px" height="75px">
+                <sub>3x3</sub>
+                <p>Apenas a diagonal principal da matriz possui o elemento 1, sendo o restante igual a 0.</p>
+        </div>
+</div>
+
+<div class="container">
+        <h1>Operações com Matrizes</h1>
+        <p>
+                As possíveis operações com matrizes são: adição de matrizes, subtração de matrizes, multiplicação
+                de uma matriz por um escalar e o produto de matrizes. Para continuarmos, é importante definirmos alguns
+                conceitos. 
+        </p>
+        <ol>
+                <li>
+                        Como vimos, matrizes podem ser definidas em termos ixj, indicando seu número de linhas
+                        e seu número de colunas, respectivamente. Assim, qualquer elemento de uma matriz pode 
+                        ser localizado pela notação: x <sub>ixj</sub>.
+                </li>
+                <li>
+                        A diagonal de uma matriz se trata de uma projeção que se inicia no primeiro
+                        elemento da matriz e se perpetua até o último termo possível na diagonal,
+                        podendo ser visualizada uma 'linha'. Esta diagonal é chamada de diagonal principal.
+                </li>
+                <li>
+                        A diagonal secundária de uma matriz se trata de uma linha projetada na diagonal
+                        que se inicia no primeiro termo da última linha da matriz e é tracejada para cima até o 
+                        último termo no sentido da diagonal.
+                </li>
+        </ol>
+
+        <h2>Adição</h2>
+        <p>
+                A adição entre matrizes só pode ser feita caso o número de linhas e o número de colunas 
+                de ambas as matrizes sejam iguais. Se esse for o caso, dada uma matriz A e uma matriz B,
+                a adição ocorrerá entre os elementos de mesma posição das matrizes, resultando em uma nova matriz. Ex.:
+        </p>
+        <div class="operation">
+                <img src="img/Add1.jpg" width="200">
+                <img src="img/Add2.jpg" width="200">
+                <img src="img/Add3.jpg" width="280">
+        </div>
+
+
+        <h2>Subtração</h2>
+        <p>
+                A subtração entre matrizes só pode ser feita caso o número de linhas e o número de colunas 
+                de ambas as matrizes sejam iguais. Se esse for o caso, dada uma matriz A e uma matriz B,
+                a subtração ocorrerá entre os elementos de mesma posição das matrizes, resultando em uma nova matriz.
+                É importante levar em consideração a posição das matrizes no enunciado, pois a ordem delas pode alterar
+                o resultado da subtração. Ex.:
+        </p>
+        <div class="operation">
+                <img src="img/Sub1.jpg" width="200">
+                <img src="img/Sub2.jpg" width="200">
+                <img src="img/Sub3.jpg" width="280">
+        </div>
+
+
+        <h2>Multiplicar por escalares</h2>
+        <p>
+                A multiplicação de uma matriz por um escalar acontece
+                quando um número real multiplica uma matriz, que vai gerar uma nova matriz
+                em que seus termos serão o produto desse número real pelos elementos da matriz original.
+                Ex.:
+        </p>
+        <div class="operation">
+                <img src="img/Sub1.jpg" width="200">
+                <img src="img/Mult_Const.jpg" width="280">
+        </div>
+
+        <h2>Produto de Matrizes</h2>
+        <p>
+                O produto de matrizes poderá acontecer somente se 
+                o número de colunas da primeira matriz seja igual ao número
+                de linhas da segunda matriz. Se esse for o caso, a matriz a ser gerada possuirá o número de linhas
+                da primeira matriz e o número de colunas da segunda. 
+                Já para o cálculo, precisamos seguir um passo a passo. 
+        </p>                
+        <ol>
+                <li>
+                        Colocamos as matrizes uma ao lado da outra.
+                        <div class="operation">
+                                <img src="img/Prod.jpg" width="300px" height="75px">
+                                <img src="img/Prod2.jpg" width="280px">
+                        </div>
+                </li>
+                <li>
+                        Multiplicaremos um termo da primeira linha da matriz A por um termo da primeira coluna da matriz B.
+                        O processo deve ser repetido até que acabem os termos da coluna, então pulamos de coluna e começamos
+                        a multiplicar pela próxima. O produto de termos de uma mesma coluna devem ser adicionados.
+                        <div class="operation">
+                                <img src="img/ProdCompleto.jpg">
+                        </div>
+                </li>
+                <li>
+                        Ao acabarem as colunas, trocamos a linha da matriz A e repetimos o processo, até acabar 
+                        todas as linhas e colunas.
+                        <div class="operation">
+                                <img src="img/ProdCompleto.jpg">
+                        </div>
+                </li>
+                <li>
+                        O processo completo pode ser visto abaixo:
+                        <div class="operation">
+                                <img src="img/ProdCompleto.jpg">
+                        </div>
+                </li>
+
+        </ol>
+</div>
+</body>
+</html>

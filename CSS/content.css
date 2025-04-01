@@ -1,0 +1,78 @@
+.container {
+    margin: 2rem 0rem 0rem 2rem;
+    width: 65%;
+}
+
+.wrapper {
+    margin: 2rem 4rem 0rem 0rem;
+    float: right;
+}
+
+.operation {
+    display: flex;
+    flex-direction: row;
+    height: fit-content ;
+
+    align-items: center;
+    align-content: center;
+
+    padding: 4rem 0rem;
+    gap: 4rem;
+}
+
+.grid-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 93%;
+
+    row-gap: 0.5rem;
+    column-gap: 2rem;
+    margin: 1rem 0rem 0rem 2rem;
+
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.grid-container > div {
+    height: 233px;
+}
+
+.grid-container > div > p {
+    text-decoration: underline;
+    margin: 1rem 0rem;
+}
+
+.grid-container > div > sub {
+    position: absolute;
+    margin-top: 4rem;
+    font-size: 1rem; 
+}
+
+.summary {
+    width:  fit-content;
+    padding: 0rem 1.5rem;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: rgb(212, 212, 212);
+}
+
+.summary > li > a {
+    text-decoration: none;
+}
+
+.summary > ul > li > a {
+    text-decoration: none;
+}
+
+.container > div {
+    position: relative;
+}
+
+.container > div > sub {
+    position: absolute;
+    bottom: 0;
+    font-size: 1rem;   
+}
