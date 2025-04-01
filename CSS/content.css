@@ -20,6 +20,19 @@
     gap: 4rem;
 }
 
+.operation_column {
+    display: flex;
+    flex-direction: column;
+    height: fit-content ;
+    width: fit-content;
+
+    align-items: center;
+    align-content: center;
+
+    margin: 4rem 0rem;
+    gap: 2rem;
+}
+
 .grid-container {
     display: grid;
     position: relative;
