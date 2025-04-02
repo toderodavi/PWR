@@ -2,6 +2,7 @@
 html {
     font-family: "Roboto", sans-serif;
     background-color: #fefefe;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
