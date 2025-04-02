@@ -1,10 +1,10 @@
-/* Retirando algumas configurações padrões do CSS */
+/* Modificando algumas configurações padrões do CSS */
 html {
     font-family: "Roboto", sans-serif;
     background-color: #fefefe;
     scroll-behavior: smooth;
 }
-body {
+body, main, section {
     margin: 0;
     padding: 0;
 }
@@ -13,24 +13,20 @@ h1, h2, p, li {
     scroll-margin-top: 4rem;
     color: #404040;
 }
-
 h1 {
     font-size: 1.5rem;
     margin-top: 2rem;
 }
-
 h2 {
     font-size: 1.25rem;
     margin-top: 1.75rem;
 }
-
 p {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-
 ol > li {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -85,6 +81,3 @@ ol > li {
 .header > a:hover::after {
     width: 100%;
 }
-
-/* lembre-se de line-height */
-/* link, visited, focus, hover and active */

@@ -17,9 +17,19 @@
     box-shadow: 5px 2px 0px 0px #1e1f20;
 }
 
+.summary > li {
+    text-decoration: none;
+    color: #000000;
+}
+
 .summary > li > a {
     text-decoration: none;
     color: #f1f5f9;
+}
+
+.summary > ul > li {
+    text-decoration: none;
+    color: #000000;
 }
 
 .summary > ul > li > a {
@@ -98,10 +108,7 @@
     gap: 2rem;
 }
 
-.bold {
-    font-weight: bold;
-}
-
+/* Formatações gerais de texto para spans */
 .underline-bold {
     text-decoration: underline;
     font-weight: 500;
