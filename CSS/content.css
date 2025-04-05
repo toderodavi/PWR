@@ -95,7 +95,7 @@
 }
 
 /* A caixa utilizada para dispor as imagens de matrizes na vertical */
-.operation_column {
+.operation-column {
     display: flex;
     flex-direction: column;
     height: fit-content ;
